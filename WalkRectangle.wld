@@ -1,0 +1,36 @@
+#Date created:October 18,2006
+# Window title
+	Walk Square Robot
+# first street, first avenue, num streets, num avenues
+	0 0 10 10
+# intersection size
+	55
+# things
+becker.robots.Thing 6 4 
+becker.robots.Thing 6 5 
+becker.robots.Thing 6 6 
+becker.robots.Thing 6 7
+becker.robots.Thing 6 8
+becker.robots.Thing 6 9
+becker.robots.Thing 6 10
+becker.robots.Thing 5 10
+becker.robots.Thing 4 10
+becker.robots.Thing 4 9
+becker.robots.Thing 4 8
+becker.robots.Thing 4 7
+becker.robots.Thing 4 6
+becker.robots.Thing 4 5
+becker.robots.Thing 4 4
+becker.robots.Thing 5 4
+becker.robots.Wall 6 5 North
+becker.robots.Wall 6 6 North
+becker.robots.Wall 6 7 North
+becker.robots.Wall 6 8 North
+becker.robots.Wall 6 9 North
+becker.robots.Wall 5 10 West
+becker.robots.Wall 4 5 South
+becker.robots.Wall 4 6 South
+becker.robots.Wall 4 7 South
+becker.robots.Wall 4 8 South
+becker.robots.Wall 4 9 South
+becker.robots.Wall 5 4 East
