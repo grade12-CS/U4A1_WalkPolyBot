@@ -1,6 +1,9 @@
 import becker.robots.*;
 
 public class WalkPolyBot extends BetterRobot{
+    /**
+     * The point the robot is initially created
+     */
     private final Point home;
 
     public WalkPolyBot(City city, int y, int x) {
@@ -9,6 +12,9 @@ public class WalkPolyBot extends BetterRobot{
         print("my home is at: " + home.toString());
     }
 
+    /**
+     * find things by following a rectangular path
+     */
     public void findThing() {
         while (frontIsClear()) {
             if (getCurrentPoint().equals(new Point(home.x, home.y - 1))) {
@@ -25,6 +31,9 @@ public class WalkPolyBot extends BetterRobot{
         }
     }
 
+    /**
+     * goes to home point where the robot was created
+     */
     public void goHome() {
         System.out.println("go home");
        goTo(home); 

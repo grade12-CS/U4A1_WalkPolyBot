@@ -1,6 +1,8 @@
-
 import java.util.Random;
 
+/**
+ * A Point class to pick out location easily on the map 
+ */
 public class Point {
     public final int x, y; 
     private static final Random r = new Random();
@@ -15,12 +17,23 @@ public class Point {
         this.y = 0;
     }
 
+    /**
+     * Generate random point within specified range
+     * @param x_min minimum value of x-coordinate
+     * @param x_max maximum value of x-coordinate
+     * @param y_min minimum value of y-coordinate
+     * @param y_max maximum value of y-coordinate
+     * @return
+     */
     public static Point createRandomPoint(int x_min, int x_max, int y_min, int y_max) {
         int x = r.nextInt(x_max) + x_min;
         int y = r.nextInt(y_max) + y_min;
         return new Point(x, y);
     }
     
+    /**
+     * checks if current point is equal to other object or point
+     */
     @Override
     public boolean equals(Object obj) {
         if (obj == null) return false;
@@ -32,6 +45,9 @@ public class Point {
         return this.x == other.x && this.y == other.y;
     }
 
+    /**
+     * converts current point in string formatted
+     */
     @Override
     public String toString() {
         return "x: " + this.x + " y: "+ this.y;
