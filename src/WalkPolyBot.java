@@ -17,7 +17,7 @@ public class WalkPolyBot extends BetterRobot{
      */
     public void findThing() {
         while (frontIsClear()) {
-            if (getCurrentPoint().equals(new Point(home.x, home.y - 1))) {
+            if (getCurrentPoint().equals(new Point(3 + 1, 6 - 1))) {
                 return;
             }
             move();
